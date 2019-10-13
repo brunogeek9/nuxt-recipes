@@ -1,22 +1,27 @@
 <template>
   <v-container class="grey lighten-5">
     <v-row no-gutters>
-      <v-col  cols="12" sm="4">
-        <v-card max-width="400" display="flex" class="mb-5 mr-5">
-          <v-img
-            class="white--text align-end"
-            height="200px"
-            src="http://f.i.uol.com.br/folha/saopaulo/images/17230178.jpeg"
-          >
-            <v-card-title>Top 10 Australian beaches</v-card-title>
-          </v-img>
-          <v-card-text class="text--primary">
-            <div>Whitehaven Beach</div>
+      <Recipe
+        thumbnail="https://media-cdn.tripadvisor.com/media/photo-s/0b/10/e1/16/restaurante-refeicao.jpg"
+        title="awesome"
+        previewText="good"
+        id="1"
+      />
 
-            <div>Whitsunday Island, Whitsunday Islands</div>
-          </v-card-text>
-        </v-card>
-      </v-col>
+      <Recipe
+        thumbnail="https://media-cdn.tripadvisor.com/media/photo-s/0e/cd/15/90/brasilianorestaurante.jpg"
+        title="awesome"
+        previewText="good"
+        id="2"
+      />
     </v-row>
   </v-container>
 </template>
+<script>
+import Recipe from "@/components/Recipe";
+export default {
+    components:{
+        Recipe
+    }
+};
+</script>
