@@ -18,14 +18,14 @@
 <script>
 export default {
   props: ["thumbnail", "title", "previewText", "id"],
-  methods:{
-      click(where){
-          let path = '/recipes/'+this.id
-          this.$router.push(path);
-      }
-  }
+  methods: {
+    click(where) {
+      let path = "/recipes/" + this.id;
+      this.$router.push(path);
+    }
+  },
+  
 };
-
 </script>
 <style scoped>
 </style>
